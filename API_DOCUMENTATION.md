@@ -4,6 +4,23 @@ Base URL: `http://localhost:4500/api`
 - Run:
 - 1- npm install 
 - 2- npm run dev
+
+## Error Responses
+
+All endpoints may return the following error responses:
+
+- `400`: Bad Request
+- `401`: Unauthorized
+- `403`: Forbidden
+- `404`: Not Found
+- `500`: Internal Server Error
+
+Each error response includes a message explaining the error.
+
+## CORS
+
+The API allows requests from `http://localhost:5173` with credentials.
+
 ## Authentication Endpoints
 
 ### Register User
@@ -216,18 +233,4 @@ Base URL: `http://localhost:4500/api`
 
 Most endpoints require authentication via a JWT token. The token should be sent as an HTTP-only cookie named `auth_token`.
 
-## Error Responses
 
-All endpoints may return the following error responses:
-
-- `400`: Bad Request
-- `401`: Unauthorized
-- `403`: Forbidden
-- `404`: Not Found
-- `500`: Internal Server Error
-
-Each error response includes a message explaining the error.
-
-## CORS
-
-The API allows requests from `http://localhost:5173` with credentials.
