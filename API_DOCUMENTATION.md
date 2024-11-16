@@ -1,8 +1,9 @@
 # API Documentation
 
 Base URL: `http://localhost:4500/api`
+
 - Run:
-- 1- npm install 
+- 1- npm install
 - 2- npm run dev
 
 ## Error Responses
@@ -225,12 +226,18 @@ The API allows requests from `http://localhost:5173` with credentials.
 
 ### Search
 
-- **URL**: `/search/search`
+- **URL**: `/search/search?title=string&description=string&tags=array&category=string`
 - **Method**: `GET`
-- **Query Parameters**: Implementation dependent
+- **Query Parameters**:
+  ```json
+  {
+    "title": "string",
+    "description": "string",
+    "tags": "array",
+    "category": "string"
+  }
+  ```
 
 ## Authentication
 
 Most endpoints require authentication via a JWT token. The token should be sent as an HTTP-only cookie named `auth_token`.
-
-
