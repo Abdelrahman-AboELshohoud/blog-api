@@ -1,9 +1,9 @@
 # API Documentation
 
 Base URL: `http://localhost:4500/api`
-Run:
-1- npm install 
-2- npm run dev
+- Run:
+- 1- npm install 
+- 2- npm run dev
 ## Authentication Endpoints
 
 ### Register User
